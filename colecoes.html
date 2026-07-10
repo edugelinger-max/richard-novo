@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISZMAN | Coleções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-collections">
+    <header class="main-header">
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="floating-menu-shell">
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li class="menu-brand-item">
+                        <a href="index.html" class="logo menu-logo" aria-label="FISZMAN Home">
+                            <img src="assets/IMG 35.webp" alt="FISZMAN Logo">
+                        </a>
+                    </li>
+                    <li><a href="index.html" data-i18n="nav_home">HOME</a></li>
+                    <li><a href="sobre.html" data-i18n="nav_about">ABOUT</a></li>
+                    <li><a href="colecoes.html" class="active" data-i18n="nav_collections">COLLECTIONS</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button class="lang-btn" onclick="changeLanguage('en')" aria-label="English">
+                    <img src="assets/IMG 01.webp" alt="US Flag">
+                </button>
+                <button class="lang-btn" onclick="changeLanguage('pt')" aria-label="Português">
+                    <img src="assets/IMG 02.webp" alt="Brazil Flag">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="app">
+        <section id="collections" class="collections-section">
+            <div class="heritage-banner" style="background-image: url('assets/IMG 08.webp');">
+                <div class="heritage-content-container">
+                    <div class="heritage-text">
+                        <h3 data-i18n="coll_title">HERITAGE COLLECTION</h3>
+                        <p data-i18n="coll_desc">The Heritage Collection honors the roots of jewelry making,
+                            combining classic techniques with contemporary design. Each piece is a tribute to the
+                            timeless beauty of natural gemstones, featuring bold cuts and intricate settings that
+                            highlight the stone's unique character. This collection represents the foundation of the
+                            Fiszman brand: respect for tradition and a passion for innovation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collections-gallery-container">
+                <div class="collections-gallery">
+                    <div class="gallery-item item-1"></div>
+                    <div class="gallery-item item-2"></div>
+                    <div class="gallery-item item-3"></div>
+                    <div class="gallery-item item-4"></div>
+                    <div class="gallery-item item-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certification" class="certification-section">
+            <div class="container">
+                <p data-i18n="cert_text">The mine’s exceptional gems and Richard’s expertise yield true works of
+                    art, elevating Cruzeiro’s natural gems to the highest levels of artistry. Every piece in the collection
+                    is one-of-a kind, a truly Brazilian work of art found nowhere else in the world. Each piece includes
+                    a certificate of origin and a full report from the International Gemological Institute (IGI).</p>
+            </div>
+        </section>
+
+        <section id="heritage-ii" class="split-section-new">
+            <div class="split-image" style="background-image: url('assets/IMG 14.webp');"></div>
+            <div class="split-content-box">
+                <div class="split-content-wrapper">
+                    <h2 data-i18n="heritage2_title">HERITAGE II COLLECTION</h2>
+                    <p data-i18n="heritage2_text1">In 2025, Richard added newer, more wearable pieces to complement his
+                        original Heritage Collection, which contained many special occasion pieces.</p>
+                    <p data-i18n="heritage2_text2">The mine's exceptional gems and Richard's expertise are still
+                        apparent in this collection, in smaller stone sizes to work with more casual looks and
+                        occasions. Every piece in the collection can be worn from morning to night. Each piece includes
+                        a certificate of origin and a full report from the International Gemological Institute (IGI).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="palmas" class="split-section-new reverse">
+            <div class="split-image" style="background-image: url('assets/IMG 15.webp');"></div>
+            <div class="split-content-box">
+                <div class="split-content-wrapper">
+                    <h2 data-i18n="palmas_title">PALMAS COLLECTION</h2>
+                    <p data-i18n="palmas_text1">Similar to the Heritage Collection in that it is inspired by Brazilian
+                        nature, the Palmas Collection by Fiszman was born after an inspirational trip to Goiana, Brazil.
+                    </p>
+                    <p data-i18n="palmas_text2">The collection uses only Brazilian stones, as well as tucum, which is
+                        the seed of a species of palm tree native to the Amazon. In this collection, Richard works the
+                        Brazilian stones in unexpected ways, carving them into organic forms and shapes, including
+                        feathers and leaves. The tucum seed, which holds significant cultural and spiritual meaning, is
+                        another unexpected element of these creations. Combined with the Brazilian stones, the look is
+                        unique and entirely original, and appeals to a range of clientele in Brazil and abroad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="all-day-long" class="mini-gallery-section">
+            <div class="mini-gallery-grid">
+                <div class="mini-item" style="background-image: url('assets/IMG 16.webp');"></div>
+                <div class="mini-item" style="background-image: url('assets/IMG 17.webp');"></div>
+                <div class="mini-item" style="background-image: url('assets/IMG 18.webp');"></div>
+                <div class="mini-item" style="background-image: url('assets/IMG 19.webp');"></div>
+            </div>
+            <div class="centered-text-block">
+                <h2 data-i18n="allday_title">ALL DAY LONG COLLECTION</h2>
+                <p data-i18n="allday_text">Though he is known for spectacular creations, Richard also offers what he
+                    calls "all day long" pieces. This is jewelry that works for any occasion--and feels effortless,
+                    personal, and alive with character. These pieces are elegant but not fussy, comfortable yet visually
+                    striking, working with smaller but high-quality diamonds and white or yellow 18K gold. The goal is
+                    jewelry that isn't just worn—it becomes part of someone's signature look, all day long. These
+                    pieces are often purchased by women looking for a classic piece, as well as clients searching for a simple
+                    but specific birthday or anniversary gift.</p>
+            </div>
+        </section>
+
+        <section id="classic" class="mini-gallery-section">
+            <div class="mini-gallery-grid">
+                <div class="mini-item" style="background-image: url('assets/IMG 20.webp');"></div>
+                <div class="mini-item" style="background-image: url('assets/IMG 21.webp');"></div>
+                <div class="mini-item" style="background-image: url('assets/IMG 22.webp');"></div>
+                <div class="mini-item" style="background-image: url('assets/IMG 23.webp');"></div>
+            </div>
+            <div class="centered-text-block">
+                <h2 data-i18n="classic_title">CLASSIC COLLECTION</h2>
+                <p data-i18n="classic_text">In these pieces, the stones come first. Whether it is top-quality diamonds
+                    or other fine gemstones, Fiszman places the stone at the center of the story. These are special
+                    pieces for special occasions, for lovers of jewelry who seek a classic statement that is not tied to
+                    fashion or fast jewelry.</p>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_nav_title">NAVIGATION</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html" data-i18n="fo_home">Home</a></li>
+                            <li><a href="sobre.html" data-i18n="fo_about">About</a></li>
+                            <li><a href="colecoes.html" data-i18n="fo_coll">Collections</a></li>
+                            <li><a href="index.html#where-to-buy" data-i18n="fo_wtb">Where to Buy</a></li>
+                            <li><a href="index.html#media-coverage" data-i18n="fo_press">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_care_title">CUSTOMER CARE</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" data-i18n="fo_contact">Contact Us</a></li>
+                            <li><a href="#" data-i18n="fo_ship">Shipping & Returns</a></li>
+                            <li><a href="#" data-i18n="fo_terms">Terms & Conditions</a></li>
+                            <li><a href="#" data-i18n="fo_privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_follow_title">FOLLOW US</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">LI</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-text">
+                    <p data-i18n="footer_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="footer-bottom">
+                    <p data-i18n="footer_copy">&copy; 2026 FISZMAN JEWELRY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
+

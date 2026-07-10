@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISZMAN | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page-home">
+    <header class="main-header">
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="floating-menu-shell">
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li class="menu-brand-item">
+                        <a href="index.html" class="logo menu-logo" aria-label="FISZMAN Home">
+                            <img src="assets/IMG 35.webp" alt="FISZMAN Logo">
+                        </a>
+                    </li>
+                    <li><a href="index.html" class="active" data-i18n="nav_home">HOME</a></li>
+                    <li><a href="sobre.html" data-i18n="nav_about">ABOUT</a></li>
+                    <li><a href="colecoes.html" data-i18n="nav_collections">COLLECTIONS</a></li>
+                </ul>
+            </nav>
+            <div class="language-switch">
+                <button class="lang-btn" onclick="changeLanguage('en')" aria-label="English">
+                    <img src="assets/IMG 01.webp" alt="US Flag">
+                </button>
+                <button class="lang-btn" onclick="changeLanguage('pt')" aria-label="PortuguÃªs">
+                    <img src="assets/IMG 02.webp" alt="Brazil Flag">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="app">
+        <section id="home" class="hero-section">
+            <div class="hero-slides">
+                <div class="slide active" style="background-image: url('assets/IMG 36.webp?v=2');">
+                </div>
+            </div>
+        </section>
+
+        <!-- Fiszman Inspiration Section -->
+        
+
+        <!-- Where to Buy Section -->
+        <section id="where-to-buy" class="where-to-buy-section">
+            <div class="where-to-buy-container">
+                <div class="wtb-title">
+                    <span class="wtb-where" data-i18n="wtb_where">WHERE</span>
+                    <span class="wtb-to-buy" data-i18n="wtb_tobuy">to buy</span>
+                </div>
+                <div class="wtb-text">
+                    <p data-i18n="wtb_text1">At Fiszman, true luxury is permanence and meaning. Each piece is born from
+                        the earth, shaped by history, refined by culture and design with craftsmanship and artistry.</p>
+                    <p data-i18n="wtb_text2">Fiszman pieces have been exhibited at several Couture Shows, at retail
+                        locations including Bergdorf Goodman in New York City and are currently available at Marissa
+                        Collections in Palm Beach and The Jewelry Edit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Coverage Section -->
+        <section id="media-coverage" class="media-coverage-section">
+            <div class="media-container">
+                <div class="media-grid">
+                    <div class="media-placeholder">
+                        <img src="assets/IMG 29.webp" alt="Media Coverage 1"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="media-placeholder">
+                        <img src="assets/IMG 30.webp" alt="Media Coverage 2"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="media-placeholder">
+                        <img src="assets/IMG 31.webp" alt="Media Coverage 3"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                </div>
+                <h2 class="section-title" style="margin-top: 2rem; margin-bottom: 2rem;" data-i18n="media_title">MEDIA
+                    COVERAGE</h2>
+                <div class="media-text">
+                    <p data-i18n="media_text">The quality and the provenance of the gems used in Fiszman pieces have not
+                        only captured the attention of consumers, but also experts from gem and gemology magazines
+                        abroad who have documented the importance of his designs and craftsmanship.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <!-- Links Column -->
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_nav_title">NAVIGATION</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html" data-i18n="fo_home">Home</a></li>
+                            <li><a href="sobre.html" data-i18n="fo_about">About</a></li>
+                            <li><a href="colecoes.html" data-i18n="fo_coll">Collections</a></li>
+                            <li><a href="#where-to-buy" data-i18n="fo_wtb">Where to Buy</a></li>
+                            <li><a href="#media-coverage" data-i18n="fo_press">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Utility Links Column -->
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_care_title">CUSTOMER CARE</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" data-i18n="fo_contact">Contact Us</a></li>
+                            <li><a href="#" data-i18n="fo_ship">Shipping & Returns</a></li>
+                            <li><a href="#" data-i18n="fo_terms">Terms & Conditions</a></li>
+                            <li><a href="#" data-i18n="fo_privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Socials Column -->
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_follow_title">FOLLOW US</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">LI</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lorem Ipsum Text -->
+                <div class="footer-text">
+                    <p data-i18n="footer_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                    <p data-i18n="footer_copy">&copy; 2026 FISZMAN JEWELRY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
+
