@@ -272,6 +272,29 @@ body.is-transitioning::after {
     height: 100%;
 }
 
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 14, 13, 0.45);
+    z-index: 2;
+    pointer-events: none;
+}
+
 .slide {
     position: absolute;
     top: 0;
